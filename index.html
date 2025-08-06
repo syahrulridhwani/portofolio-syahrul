@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Syahrul Ridhwani</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Popup Nama -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-box">
+        <img src="/Project/LOGO.png" alt="Logo" class="popup-logo" />
+        <h2>Masukkan Nama</h2>
+        <input type="text" id="username" placeholder="Nama Kamu..." />
+        <button onclick="submitName()">Mulai</button>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/Project/Profil2.png" alt="Logo" />
+      </div>
+
+      <button class="hamburger" id="hamburger-btn">&#9776;</button>
+
+      <div class="nav-group" id="nav-links">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+        </ul>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+      </div>
+    </nav>
+
+    <div class="bg-floating"></div>
+
+    <!-- Home -->
+    <section id="home" class="section home">
+      <div class="intro">
+        <h1>
+          Selamat Datang, <span class="highlight">Nama</span><br />di Portofolio
+          Syahrul Ridhwani
+        </h1>
+        <p>
+          Jelajahi beragam karya kreatif yang telah saya buat—mulai dari desain
+          grafis visual yang memikat, hingga desain UI/UX dan website yang
+          fungsional dan estetis. Semua hasil karya ini mencerminkan proses,
+          eksplorasi, dan semangat saya dalam dunia desain digital.
+        </p>
+      </div>
+      <div class="home-image">
+        <div class="circle-bg">
+          <img src="/Maskot/1.png" alt="Orang Ketawa" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section (Mini) -->
+    <section id="social" class="section-social">
+      <div class="social-icons-center">
+        <a href="https://www.instagram.com/craftedbysyhrul/" target="_blank">
+          <img src="IconLogo/IG.png" alt="Instagram" />
+        </a>
+        <a href="https://wa.me/62xxxxxx" target="_blank">
+          <img src="/IconLogo/WA.png" alt="WhatsApp" />
+        </a>
+        <a href="https://linkedin.com/in/namamu" target="_blank">
+          <img src="/IconLogo/IN.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1xOMhnVcp04XLYb-fytDuL-j5TUNA0Yi2/view?usp=sharing"
+          target="_blank"
+        >
+          <img src="/IconLogo/PRTO.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section about">
+      <div class="about-wrapper">
+        <div class="about-image">
+          <div class="circle-bg">
+            <img src="/Maskot/5.png" alt="Orang Ketawa" />
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            Halo! Saya Syahrul Ridhwani, seseorang yang senang mencoba hal-hal
+            baru dan terus belajar dari setiap proses. Ketertarikan saya pada
+            dunia digital membawa saya mendalami UI/UX Design, Web Development,
+            serta Desain Grafis. Dalam proses berkarya, saya terbiasa bekerja
+            secara kolaboratif dan terbuka terhadap ide-ide baru dari tim.
+          </p>
+          <div class="skill-item">
+            <div class="skill-title">
+              <span>UI/UX Design</span>
+              <span class="percent">80%</span>
+            </div>
+            <div class="bar">
+              <div class="progress" data-percent="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-title">
+              <span>Web Development (HTML, CSS, JS)</span>
+              <span class="percent">75%</span>
+            </div>
+            <div class="bar">
+              <div class="progress" data-percent="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-title">
+              <span>Graphic Design</span>
+              <span class="percent">90%</span>
+            </div>
+            <div class="bar">
+              <div class="progress" data-percent="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-title">
+              <span>Collaboration & Teamwork</span>
+              <span class="percent">85%</span>
+            </div>
+            <div class="bar">
+              <div class="progress" data-percent="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services section-primary">
+      <div class="service-header">
+        <div class="service-image">
+          <div class="circle-bg">
+            <img src="/Maskot/3.png" alt="Orang Ketawa" />
+          </div>
+        </div>
+        <div class="service-content">
+          <h2>Apa yang Bisa Saya Bantu?</h2>
+          <p>
+            Saya mengerjakan berbagai project desain dan digital mulai dari
+            poster, UI/UX, sampai manajemen konten semua dengan sentuhan
+            personal dan estetika yang kuat.
+          </p>
+
+          <!-- SCROLL CARD masuk ke dalam sini -->
+          <div class="service-scroll auto-scroll" id="autoScroll">
+            <div class="service-card">
+              <div class="circle-icon">
+                <img src="logo.png" alt="Icon UI/UX" />
+              </div>
+              <h3>Desain Poster<br />& Visual Grafis</h3>
+              <p>
+                Membuat desain poster untuk event, promosi, dan kampanye visual
+                dengan pendekatan estetika dan pesan yang kuat.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="circle-icon">
+                <img src="logo.png" alt="Icon UI/UX" />
+              </div>
+              <h3>UI/UX Design<br />& Prototyping</h3>
+              <p>
+                Merancang tampilan dan pengalaman pengguna menggunakan
+                Figma—dari wireframe sederhana hingga prototipe interaktif.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="circle-icon">
+                <img src="logo.png" alt="Icon UI/UX" />
+              </div>
+              <h3>
+                Manajemen<br />
+                Media Sosial
+              </h3>
+              <p>
+                Mengelola akun sosial media secara profesional, termasuk konten
+                visual, caption, dan interaksi audiens.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="circle-icon">
+                <img src="logo.png" alt="Icon UI/UX" />
+              </div>
+              <h3>
+                Website <br />
+                Design
+              </h3>
+              <p>
+                Membuat tampilan antarmuka website yang responsif dan estetis,
+                mengutamakan kenyamanan pengguna dan identitas brand.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="circle-icon">
+                <img src="logo.png" alt="Icon UI/UX" />
+              </div>
+              <h3>
+                Brand Identity <br />
+                Design
+              </h3>
+              <p>
+                Membuat elemen branding seperti logo, warna, dan gaya visual
+                untuk memperkuat citra bisnis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="projects" class="section projects">
+      <h2>Berikut beberapa karya pilihan saya</h2>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">
+          Account Management
+        </button>
+        <button class="filter-btn" data-filter="website">Graphic Design</button>
+        <button class="filter-btn" data-filter="grafis">
+          Concept & Exploration
+        </button>
+      </div>
+
+      <div class="project-list">
+        <!-- Mobile -->
+        <div class="project-card" data-category="mobile">
+          <div class="thumb">
+            <img src="/Project/24.png" alt="Mobile Project" />
+          </div>
+          <h3>Account Management</h3>
+          <p>Login Computer</p>
+        </div>
+
+        <div class="project-card" data-category="mobile">
+          <div class="thumb">
+            <img src="/Project/34.png" alt="Mobile Project" />
+          </div>
+          <h3>Account Management</h3>
+          <p>Soto Kakung</p>
+        </div>
+
+        <div class="project-card" data-category="mobile">
+          <div class="thumb">
+            <img src="/Project/35.png" alt="Mobile Project" />
+          </div>
+          <h3>Account Management</h3>
+          <p>Mbok Sambal Mentah.</p>
+        </div>
+
+        <div class="project-card" data-category="mobile">
+          <div class="thumb">
+            <img src="/Project/31.png" alt="Mobile Project" />
+          </div>
+          <h3>Account Management</h3>
+          <p>Mie Eyang.</p>
+        </div>
+
+        <div class="project-card" data-category="mobile">
+          <div class="thumb">
+            <img src="/Project/33.png" alt="Mobile Project" />
+          </div>
+          <h3>Account Management</h3>
+          <p>Baba Nasi Goreng Daun Pisang</p>
+        </div>
+
+        <div class="project-card" data-category="mobile">
+          <div class="thumb">
+            <img src="/Project/24.png" alt="Mobile Project" />
+          </div>
+          <h3>Account Management</h3>
+          <p>Desain Feed Instagram untuk Akun Login.</p>
+        </div>
+
+        <!-- Website -->
+        <div class="project-card" data-category="website">
+          <div class="thumb">
+            <img src="/Project/11.png" alt="Website Project" />
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Nametag Pasar Mahasiswa 8.</p>
+        </div>
+
+        <div class="project-card" data-category="website">
+          <div class="thumb">
+            <img src="/Project/27.png" alt="Website Project" />
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Graduation Card Escritorio 3.</p>
+        </div>
+
+        <div class="project-card" data-category="website">
+          <div class="thumb">
+            <img src="/Project/19.png" alt="Website Project" />
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Poster Bazar.</p>
+        </div>
+
+        <div class="project-card" data-category="website">
+          <div class="thumb">
+            <img src="/Project/PosterHimaNegara.png" alt="Website Project" />
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Poster Hima Negara.</p>
+        </div>
+
+        <div class="project-card" data-category="website">
+          <div class="thumb">
+            <img src="/Project/7.png" alt="Website Project" />
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Poster Hima Hubungan International.</p>
+        </div>
+
+        <div class="project-card" data-category="website">
+          <div class="thumb">
+            <img src="/Project/13.png" alt="Website Project" />
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Poster PPR FEBM UMRAH.</p>
+        </div>
+
+        <!-- Grafis -->
+        <div class="project-card" data-category="grafis">
+          <div class="thumb">
+            <img src="/Project/20.png" alt="Grafis Design" />
+          </div>
+          <h3>Concept & Exploration</h3>
+          <p>Corndog Mas Aji.</p>
+        </div>
+
+        <div class="project-card" data-category="grafis">
+          <div class="thumb">
+            <img src="/Project/KebabRotiSosisSelimut.png" alt="Grafis Design" />
+          </div>
+          <h3>Concept & Exploration</h3>
+          <p>Kebab Roti Sosis Selimut.</p>
+        </div>
+
+        <div class="project-card" data-category="grafis">
+          <div class="thumb">
+            <img src="/Project/14.png" alt="Grafis Design" />
+          </div>
+          <h3>Concept & Exploration</h3>
+          <p>Bakulanibok.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="section testimoni section-primary">
+      <h2>Testimoni</h2>
+      <p>Apa Kata Mereka?</p>
+      <div class="testimonial-carousel auto-scroll" id="testimonialScroll">
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <div class="circle-avatar">
+              <img src="/Maskot/7.png" alt="Foto Testimoni" />
+            </div>
+          </div>
+          <p class="quote">“</p>
+          <p class="comment">
+            Dari awal diskusi sampai eksekusi selalu responsif. Desainnya juga
+            bisa langsung dipakai tanpa revisi banyak.
+          </p>
+          <p class="name">Corndog Mas Aji</p>
+          <p class="status">Owner UMKM</p>
+        </div>
+        <!-- Duplikat sesuai jumlah testimoni -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <div class="circle-avatar">
+              <img src="/Maskot/7.png" alt="Foto Testimoni" />
+            </div>
+          </div>
+          <p class="quote">“</p>
+          <p class="comment">
+            Desainnya nggak cuma estetik, tapi juga fungsional. Ngebantu banget
+            buat branding project aku!
+          </p>
+          <p class="name">Soto Eyang</p>
+          <p class="status">Management Account</p>
+        </div>
+        <!-- Duplikat sesuai jumlah testimoni -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <div class="circle-avatar">
+              <img src="/Maskot/7.png" alt="Foto Testimoni" />
+            </div>
+          </div>
+          <p class="quote">“</p>
+          <p class="comment">
+            Pengerjaannya cepat dan rapi. Bener-bener ngerti brief dari awal
+            sampai akhir.
+          </p>
+          <p class="name">Bakulanibok</p>
+          <p class="status">Owner UMKM</p>
+        </div>
+        <!-- Duplikat sesuai jumlah testimoni -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <div class="circle-avatar">
+              <img src="/Maskot/7.png" alt="Foto Testimoni" />
+            </div>
+          </div>
+          <p class="quote">“</p>
+          <p class="comment">
+            Gaya visualnya khas banget, langsung bisa dikenali. Profesional dan
+            komunikatif juga.
+          </p>
+          <p class="name">Bang Syu</p>
+          <p class="status">Videographer & Partner Kolaborasi</p>
+        </div>
+        <!-- Duplikat sesuai jumlah testimoni -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <div class="circle-avatar">
+              <img src="/Maskot/7.png" alt="Foto Testimoni" />
+            </div>
+          </div>
+          <p class="quote">“</p>
+          <p class="comment">
+            Thumbnail YouTube yang dia bikin ngebantu banget naikin klik.
+            Visualnya catchy tapi tetap profesional.
+          </p>
+          <p class="name">Marimo Lot</p>
+          <p class="status">YouTuber</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2>Let’s Create Something Amazing!</h2>
+      <p>
+        Saya percaya setiap proyek punya potensi luar biasa. Yuk, bicarakan ide
+        Anda bersama saya.
+      </p>
+      <a
+        href="https://www.instagram.com/craftedbysyhrul/"
+        target="_blank"
+        class="btn-contact"
+        >Hubungi Saya</a
+      >
+    </section>
+
+    <script>
+      function submitName() {
+        const name = document.getElementById("username").value.trim();
+        if (name !== "") {
+          document.querySelector(".highlight").textContent = name;
+          document.getElementById("popup").style.display = "none";
+        } else {
+          alert("Nama tidak boleh kosong!");
+        }
+      }
+
+      window.onload = function () {
+        document.getElementById("username").focus();
+
+        const scrollBox = document.getElementById("autoScroll");
+        let scrollAmount = 0;
+        let isPaused = false;
+
+        // Pause saat hover
+        scrollBox.addEventListener("mouseenter", () => {
+          isPaused = true;
+        });
+        scrollBox.addEventListener("mouseleave", () => {
+          isPaused = false;
+        });
+
+        setInterval(() => {
+          if (!isPaused) {
+            scrollAmount += 1;
+            scrollBox.scrollLeft = scrollAmount;
+            if (scrollAmount > scrollBox.scrollWidth - scrollBox.clientWidth) {
+              scrollAmount = 0;
+            }
+          }
+        }, 30); // sedikit lebih cepat dan halus
+      };
+    </script>
+    <script>
+      document;
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const navGroup = document.querySelector(".nav-group");
+
+      hamburgerBtn.addEventListener("click", () => {
+        hamburgerBtn.classList.toggle("active");
+        navGroup.classList.toggle("show");
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const progressBars = document.querySelectorAll(".progress");
+        progressBars.forEach((bar) => {
+          const percent = bar.getAttribute("data-percent");
+          setTimeout(() => {
+            bar.style.width = percent + "%";
+          }, 300);
+        });
+      });
+    </script>
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const projectCards = document.querySelectorAll(".project-card");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+
+          // update active class
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          // hide/show cards
+          projectCards.forEach((card) => {
+            // jika filter "all", tampilkan semuanya
+            if (filter === "all") {
+              card.style.display = "flex";
+            } else {
+              // jika bukan "all", hanya tampilkan yang sesuai kategori
+              if (card.dataset.category === filter) {
+                card.style.display = "flex";
+              } else {
+                card.style.display = "none";
+              }
+            }
+          });
+        });
+      });
+    </script>
+    <script>
+      const scrollContainer = document.getElementById("testimonialScroll");
+      setInterval(() => {
+        if (
+          scrollContainer.scrollLeft + scrollContainer.clientWidth >=
+          scrollContainer.scrollWidth
+        ) {
+          scrollContainer.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+        }
+      }, 3500);
+    </script>
+  </body>
+</html>
